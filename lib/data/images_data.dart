@@ -472,3 +472,56 @@ Map imgeData = {
     },
   },
 };
+Map trainImage = {
+  'share': {
+    'sit_1': {
+      'image': [
+        'assets/training/share/situation_1/2.jpg',
+        'assets/training/share/situation_1/3.jpg',
+        'assets/training/share/situation_1/1.jpg',
+        'assets/training/share/situation_1/4.jpg',
+      ],
+      'rate': [2, 1, 3, 0],
+    },
+  },
+  'emphathy': {
+    'sit_1': {
+      'image': [
+        'assets/training/emphathy/situation_1/2.jpg',
+        'assets/training/emphathy/situation_1/3.jpg',
+        'assets/training/emphathy/situation_1/1.jpg',
+        'assets/training/emphathy/situation_1/4.jpg',
+      ],
+      'rate': [2, 1, 3, 0],
+    },
+    'sit_2': {
+      'image': [
+        'assets/training/emphathy/situation_2/4.jpg',
+        'assets/training/emphathy/situation_2/2.jpg',
+        'assets/training/emphathy/situation_2/1.jpg',
+        'assets/training/emphathy/situation_2/3.jpg',
+      ],
+      'rate': [0, 2, 3, 1],
+    },
+  },
+  'cooperation': {
+    'sit_1': {
+      'image': [
+        'assets/training/cooperation/situation_1/2.jpg',
+        'assets/training/cooperation/situation_1/3.jpg',
+        'assets/training/cooperation/situation_1/1.jpg',
+        'assets/training/cooperation/situation_1/4.jpg',
+      ],
+      'rate': [2, 1, 3, 0],
+    },
+    'sit_2': {
+      'image': [
+        'assets/training/cooperation/situation_2/4.jpg',
+        'assets/training/cooperation/situation_2/2.jpg',
+        'assets/training/cooperation/situation_2/1.jpg',
+        'assets/training/cooperation/situation_2/3.jpg',
+      ],
+      'rate': [0, 2, 3, 1],
+    },
+  },
+};

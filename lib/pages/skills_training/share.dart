@@ -11,7 +11,7 @@ class ShareTrain extends StatelessWidget {
   Widget build(BuildContext context) {
     InfoController controller = Get.put(InfoController());
     return TrainScaffold(
-      itemCount: 5,
+      itemCount: 1,
       text: 'share',
       title: 'المشاركة',
       pageController: controller.pageController,

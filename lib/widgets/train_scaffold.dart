@@ -39,7 +39,7 @@ class TrainScaffold extends StatelessWidget {
       ),
       body: Center(
         child: PageView.builder(
-          itemCount: 5,
+          itemCount: itemCount,
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
           itemBuilder: (context, index) {
@@ -66,23 +66,58 @@ class TrainScaffold extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Center(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                            padding: const EdgeInsets.all(1),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(24),
-                              child: Image.asset(
-                                'assets/images/$text/situation_${index + 1}/main.jpg',
-                                width: Get.width / 1.5,
-                                height: Get.width / 1.5,
-                                fit: BoxFit.fill,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            IconButton(
+                              padding: const EdgeInsets.all(12),
+                              onPressed: () {
+                                pageController!.previousPage(
+                                    duration: const Duration(milliseconds: 400),
+                                    curve: Curves.easeInOut);
+                              },
+                              icon: const Align(
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  textDirection: TextDirection.ltr,
+                                  Icons.arrow_forward_ios,
+                                  size: 40,
+                                ),
                               ),
                             ),
-                          ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              padding: const EdgeInsets.all(1),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(24),
+                                child: Image.asset(
+                                  'assets/training/$text/situation_${index + 1}/main.jpg',
+                                  width: Get.width / 1.5,
+                                  height: Get.width / 1.5,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            IconButton(
+                              padding: const EdgeInsets.all(12),
+                              onPressed: () {
+                                pageController!.nextPage(
+                                    duration: const Duration(milliseconds: 400),
+                                    curve: Curves.easeInOut);
+                              },
+                              icon: const Align(
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  textDirection: TextDirection.rtl,
+                                  Icons.arrow_forward_ios,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                         const SizedBox(height: 8),
                       ],
@@ -114,8 +149,8 @@ class TrainScaffold extends StatelessWidget {
                                   if (controller.pageController.page ==
                                       itemCount - 1) {
                                     await controller.addPoints(
-                                      imgeData[text]['sit_${index + 1}']['rate']
-                                          [gridIndex],
+                                      trainImage[text]['sit_${index + 1}']
+                                          ['rate'][gridIndex],
                                     );
                                     await controller.done(
                                       text,
@@ -123,8 +158,8 @@ class TrainScaffold extends StatelessWidget {
                                     );
                                   } else {
                                     await controller.addPoints(
-                                      imgeData[text]['sit_${index + 1}']['rate']
-                                          [gridIndex],
+                                      trainImage[text]['sit_${index + 1}']
+                                          ['rate'][gridIndex],
                                     );
                                     controller.pageController.nextPage(
                                       duration:
@@ -144,7 +179,7 @@ class TrainScaffold extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(24),
                                       child: SizedBox(
                                         child: Image.asset(
-                                          imgeData[text]['sit_${index + 1}']
+                                          trainImage[text]['sit_${index + 1}']
                                               ['image'][gridIndex],
                                           fit: BoxFit.fill,
                                         ),

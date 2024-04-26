@@ -1,7 +1,9 @@
+import 'package:sssa/data/colors.dart';
 import 'package:sssa/main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sssa/widgets/main_button.dart';
 
 class InfoController extends GetxController {
   int tempNum = 0;
@@ -37,4 +39,18 @@ class InfoController extends GetxController {
   }
 
   //Train singl result
+  Future<void> trainResult() async {
+    Get.defaultDialog(
+      titleStyle: const TextStyle(
+        color: Colors.red,
+      ),
+      actions: [
+        MainButton(
+          text: 'التالي',
+          color: itemColor,
+        ),
+      ],
+      middleText: 'تم بنجاح',
+    );
+  }
 }

@@ -3,6 +3,7 @@ import 'package:sssa/data/colors.dart';
 import 'package:sssa/pages/skills_test/cooperation.dart';
 import 'package:sssa/pages/skills_test/empathy.dart';
 import 'package:sssa/pages/skills_test/share.dart';
+import 'package:sssa/pages/skills_training/cooperation.dart';
 import 'package:sssa/pages/skills_training/share.dart';
 import 'package:sssa/widgets/skill_card.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,7 @@ class SkillsTrain extends StatelessWidget {
               children: [
                 SkillCard(
                   text: 'المشاركة',
-                  image: 'assets/images/share/situation_1/1.jpg',
+                  image: 'assets/training/share/situation_1/1.jpg',
                   onTap: () {
                     Get.to(() => const ShareTrain());
                   },
@@ -57,7 +58,7 @@ class SkillsTrain extends StatelessWidget {
                   text: 'التعاون',
                   image: 'assets/images/cooperation/situation_1/1.jpg',
                   onTap: () {
-                    Get.to(() => const Cooperation());
+                    Get.to(() => const CooperationTrain());
                   },
                 ),
               ],

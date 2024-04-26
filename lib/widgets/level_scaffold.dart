@@ -39,7 +39,7 @@ class LevelScaffold extends StatelessWidget {
       ),
       body: Center(
         child: PageView.builder(
-          itemCount: 5,
+          itemCount: itemCount,
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
           itemBuilder: (context, index) {
