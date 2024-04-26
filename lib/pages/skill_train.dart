@@ -1,8 +1,6 @@
 import 'package:sssa/controller/info_controller.dart';
 import 'package:sssa/data/colors.dart';
-import 'package:sssa/pages/skills_test/cooperation.dart';
 import 'package:sssa/pages/skills_test/empathy.dart';
-import 'package:sssa/pages/skills_test/share.dart';
 import 'package:sssa/pages/skills_training/cooperation.dart';
 import 'package:sssa/pages/skills_training/share.dart';
 import 'package:sssa/widgets/skill_card.dart';

@@ -146,27 +146,10 @@ class TrainScaffold extends StatelessWidget {
                             builder: (controller) {
                               return GestureDetector(
                                 onTap: () async {
-                                  if (controller.pageController.page ==
-                                      itemCount - 1) {
-                                    await controller.addPoints(
-                                      trainImage[text]['sit_${index + 1}']
-                                          ['rate'][gridIndex],
-                                    );
-                                    await controller.done(
-                                      text,
+                                  controller.trainResult(
                                       title,
-                                    );
-                                  } else {
-                                    await controller.addPoints(
                                       trainImage[text]['sit_${index + 1}']
-                                          ['rate'][gridIndex],
-                                    );
-                                    controller.pageController.nextPage(
-                                      duration:
-                                          const Duration(milliseconds: 400),
-                                      curve: Curves.ease,
-                                    );
-                                  }
+                                          ['rate'][gridIndex]);
                                 },
                                 child: Center(
                                   child: Container(
