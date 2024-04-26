@@ -66,62 +66,29 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
-    # share
+    # share test
     - assets/images/share/situation_1/
     - assets/images/share/situation_2/
     - assets/images/share/situation_3/
     - assets/images/share/situation_4/
     - assets/images/share/situation_5/
-    # mimic
-    - assets/images/mimic/situation_1/
-    - assets/images/mimic/situation_2/
-    - assets/images/mimic/situation_3/
-    - assets/images/mimic/situation_4/
-    - assets/images/mimic/situation_5/
-    # emphathy
+    # share train
+    - assets/training/share/situation_1/
+    # emphathy test
     - assets/images/emphathy/situation_1/
     - assets/images/emphathy/situation_2/
     - assets/images/emphathy/situation_3/
     - assets/images/emphathy/situation_4/
-    # self-assertion
-    - assets/images/self-assertion/situation_1/
-    - assets/images/self-assertion/situation_2/
-    - assets/images/self-assertion/situation_3/
-    - assets/images/self-assertion/situation_4/
-    - assets/images/self-assertion/situation_5/
-    # responsibility
-    - assets/images/responsibility/situation_1/
-    - assets/images/responsibility/situation_2/
-    - assets/images/responsibility/situation_3/
-    - assets/images/responsibility/situation_4/
-    # Non-verbal-communication
-    - assets/images/Non-verbal-communication/situation_1/
-    - assets/images/Non-verbal-communication/situation_2/
-    - assets/images/Non-verbal-communication/situation_3/
-    - assets/images/Non-verbal-communication/situation_4/
-    # Restraint
-    - assets/images/Restraint/situation_1/
-    - assets/images/Restraint/situation_2/
-    - assets/images/Restraint/situation_3/
-    - assets/images/Restraint/situation_4/
-    # Safety&Security
-    - assets/images/Safety&Security/situation_1/
-    - assets/images/Safety&Security/situation_2/
-    - assets/images/Safety&Security/situation_3/
-    - assets/images/Safety&Security/situation_4/
-    - assets/images/Safety&Security/situation_5/
-    # Verbal-communication
-    - assets/images/Verbal-communication/situation_1/
-    - assets/images/Verbal-communication/situation_2/
-    - assets/images/Verbal-communication/situation_3/
-    - assets/images/Verbal-communication/situation_4/
-    - assets/images/Verbal-communication/situation_5/
-    # peers-connection
-    - assets/images/peers-connection/situation_1/
-    - assets/images/peers-connection/situation_2/
-    - assets/images/peers-connection/situation_3/
-    - assets/images/peers-connection/situation_4/
-
+    # cooperation test
+    - assets/images/cooperation/situation_1/
+    - assets/images/cooperation/situation_2/
+    - assets/images/cooperation/situation_3/
+    - assets/images/cooperation/situation_4/
+    - assets/images/cooperation/situation_5/
+    # cooperation train
+    - assets/training/cooperation/situation_1/
+    - assets/training/cooperation/situation_2/
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

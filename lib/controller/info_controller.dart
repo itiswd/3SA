@@ -12,7 +12,8 @@ class InfoController extends GetxController {
     prefs = await SharedPreferences.getInstance();
     tempNum += num;
     await prefs.setInt('temp', tempNum);
-    debugPrint('$tempNum');
+    //Test results
+    // debugPrint('$tempNum');
   }
 
   //Calculate result
@@ -34,4 +35,6 @@ class InfoController extends GetxController {
     // debugPrint('${prefs.getInt('temp')}');
     // debugPrint('${prefs.getInt(keyy)}');
   }
+
+  //Train singl result
 }

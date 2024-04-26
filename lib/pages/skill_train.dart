@@ -3,12 +3,13 @@ import 'package:sssa/data/colors.dart';
 import 'package:sssa/pages/skills_test/cooperation.dart';
 import 'package:sssa/pages/skills_test/empathy.dart';
 import 'package:sssa/pages/skills_test/share.dart';
+import 'package:sssa/pages/skills_training/share.dart';
 import 'package:sssa/widgets/skill_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SkillsTest extends StatelessWidget {
-  const SkillsTest({super.key});
+class SkillsTrain extends StatelessWidget {
+  const SkillsTrain({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class SkillsTest extends StatelessWidget {
         backgroundColor: itemColor,
         centerTitle: true,
         title: const Text(
-          'مقياس المهارات',
+          'التدريب على المهارات',
           style: TextStyle(
             fontSize: 28,
             color: Colors.white,
@@ -42,7 +43,7 @@ class SkillsTest extends StatelessWidget {
                   text: 'المشاركة',
                   image: 'assets/images/share/situation_1/1.jpg',
                   onTap: () {
-                    Get.to(() => const ShareSkill());
+                    Get.to(() => const ShareTrain());
                   },
                 ),
                 SkillCard(

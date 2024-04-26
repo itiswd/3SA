@@ -96,51 +96,14 @@ class Info extends StatelessWidget {
                           text2: '${prefs.getInt('share')} من 15',
                         ),
                         RateElement(
-                          visible: 'vismimic',
-                          text1: 'التقليد',
-                          text2: '${prefs.getInt('mimic')} من 15',
-                        ),
-                        RateElement(
                           visible: 'visemphathy',
                           text1: 'التعاطف',
                           text2: '${prefs.getInt('emphathy')} من 12',
                         ),
                         RateElement(
-                          visible: 'visself-assertion',
-                          text1: 'توكيد الذات',
-                          text2: '${prefs.getInt('self-assertion')} من 15',
-                        ),
-                        RateElement(
-                          visible: 'visresponsibility',
-                          text1: 'تحمل المسؤولية',
-                          text2: '${prefs.getInt('responsibility')} من 12',
-                        ),
-                        RateElement(
-                          visible: 'visVerbal-communication',
-                          text1: 'تواصل لفظي',
-                          text2:
-                              '${prefs.getInt('Verbal-communication')} من 15',
-                        ),
-                        RateElement(
-                          visible: 'visNon-verbal-communication',
-                          text1: 'تواصل غير لفظي',
-                          text2:
-                              '${prefs.getInt('Non-verbal-communication')} من 12',
-                        ),
-                        RateElement(
-                          visible: 'visRestraint',
-                          text1: 'ضبط النفس',
-                          text2: '${prefs.getInt('Restraint')} من 12',
-                        ),
-                        RateElement(
-                          visible: 'visSafety&Security',
-                          text1: 'الأمن والسلامة',
-                          text2: '${prefs.getInt('Safety&Security')} من 15',
-                        ),
-                        RateElement(
-                          visible: 'vispeers-connection',
-                          text1: 'التواصل مع الأقران',
-                          text2: '${prefs.getInt('peers-connection')} من 12',
+                          visible: 'cooperation',
+                          text1: 'التعاون',
+                          text2: '${prefs.getInt('cooperation')} من 15',
                         ),
                       ],
                     ),

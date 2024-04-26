@@ -2,6 +2,7 @@ import 'package:sssa/data/colors.dart';
 import 'package:sssa/main.dart';
 import 'package:sssa/pages/info.dart';
 import 'package:sssa/pages/login_screen.dart';
+import 'package:sssa/pages/skill_train.dart';
 import 'package:sssa/pages/skills_test.dart';
 import 'package:sssa/widgets/main_button.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +51,9 @@ class HomePage extends StatelessWidget {
             height: 80,
             color: itemColor,
             text: 'التدريب على المهارات',
-            onPressed: () {},
+            onPressed: () {
+              Get.to(() => const SkillsTrain());
+            },
           ),
           const SizedBox(height: 12),
           MainButton(
