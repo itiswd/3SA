@@ -1,6 +1,5 @@
 import 'package:sssa/controller/info_controller.dart';
 import 'package:sssa/data/colors.dart';
-import 'package:sssa/pages/skills_test/empathy.dart';
 import 'package:sssa/pages/skills_training/cooperation.dart';
 import 'package:sssa/pages/skills_training/share.dart';
 import 'package:sssa/widgets/skill_card.dart';
@@ -45,16 +44,16 @@ class SkillsTrain extends StatelessWidget {
                     Get.to(() => const ShareTrain());
                   },
                 ),
-                SkillCard(
-                  text: 'التعاطف',
-                  image: 'assets/images/emphathy/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const EmphathySkill());
-                  },
-                ),
+                // SkillCard(
+                //   text: 'التعاطف',
+                //   image: 'assets/images/emphathy/situation_1/1.jpg',
+                //   onTap: () {
+                //     Get.to(() => const EmphathySkill());
+                //   },
+                // ),
                 SkillCard(
                   text: 'التعاون',
-                  image: 'assets/images/cooperation/situation_1/1.jpg',
+                  image: 'assets/training/cooperation/situation_1/1.jpg',
                   onTap: () {
                     Get.to(() => const CooperationTrain());
                   },
