@@ -131,6 +131,53 @@ Map imgeData = {
       'rate': [3, 0, 2, 1],
     },
   },
+  'wait': {
+    'sit_1': {
+      'image': [
+        'assets/images/wait/situation_1/1.jpg',
+        'assets/images/wait/situation_1/4.jpg',
+        'assets/images/wait/situation_1/2.jpg',
+        'assets/images/wait/situation_1/3.jpg',
+      ],
+      'rate': [3, 0, 2, 1],
+    },
+    'sit_2': {
+      'image': [
+        'assets/images/wait/situation_2/2.jpg',
+        'assets/images/wait/situation_2/4.jpg',
+        'assets/images/wait/situation_2/3.jpg',
+        'assets/images/wait/situation_2/1.jpg',
+      ],
+      'rate': [2, 0, 1, 3],
+    },
+    'sit_3': {
+      'image': [
+        'assets/images/wait/situation_3/2.jpg',
+        'assets/images/wait/situation_3/3.jpg',
+        'assets/images/wait/situation_3/4.jpg',
+        'assets/images/wait/situation_3/1.jpg',
+      ],
+      'rate': [2, 1, 0, 3],
+    },
+    'sit_4': {
+      'image': [
+        'assets/images/wait/situation_4/4.jpg',
+        'assets/images/wait/situation_4/2.jpg',
+        'assets/images/wait/situation_4/1.jpg',
+        'assets/images/wait/situation_4/3.jpg',
+      ],
+      'rate': [0, 2, 3, 1],
+    },
+    'sit_5': {
+      'image': [
+        'assets/images/wait/situation_5/4.jpg',
+        'assets/images/wait/situation_5/1.jpg',
+        'assets/images/wait/situation_5/3.jpg',
+        'assets/images/wait/situation_5/2.jpg',
+      ],
+      'rate': [0, 3, 1, 2],
+    },
+  },
   'mimic': {
     'sit_1': {
       'image': [
@@ -484,26 +531,6 @@ Map trainImage = {
       'rate': [2, 1, 3, 0],
     },
   },
-  'emphathy': {
-    'sit_1': {
-      'image': [
-        'assets/training/emphathy/situation_1/2.jpg',
-        'assets/training/emphathy/situation_1/3.jpg',
-        'assets/training/emphathy/situation_1/1.jpg',
-        'assets/training/emphathy/situation_1/4.jpg',
-      ],
-      'rate': [2, 1, 3, 0],
-    },
-    'sit_2': {
-      'image': [
-        'assets/training/emphathy/situation_2/4.jpg',
-        'assets/training/emphathy/situation_2/2.jpg',
-        'assets/training/emphathy/situation_2/1.jpg',
-        'assets/training/emphathy/situation_2/3.jpg',
-      ],
-      'rate': [0, 2, 3, 1],
-    },
-  },
   'cooperation': {
     'sit_1': {
       'image': [
@@ -522,6 +549,17 @@ Map trainImage = {
         'assets/training/cooperation/situation_2/3.jpg',
       ],
       'rate': [0, 2, 3, 1],
+    },
+  },
+  'wait': {
+    'sit_1': {
+      'image': [
+        'assets/training/wait/situation_1/4.jpg',
+        'assets/training/wait/situation_1/1.jpg',
+        'assets/training/wait/situation_1/3.jpg',
+        'assets/training/wait/situation_1/2.jpg',
+      ],
+      'rate': [0, 3, 1, 2],
     },
   },
 };

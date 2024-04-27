@@ -3,6 +3,7 @@ import 'package:sssa/data/colors.dart';
 import 'package:sssa/pages/skills_test/cooperation.dart';
 import 'package:sssa/pages/skills_test/empathy.dart';
 import 'package:sssa/pages/skills_test/share.dart';
+import 'package:sssa/pages/skills_test/wait.dart';
 import 'package:sssa/widgets/skill_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -57,6 +58,13 @@ class SkillsTest extends StatelessWidget {
                   image: 'assets/images/cooperation/situation_1/1.jpg',
                   onTap: () {
                     Get.to(() => const Cooperation());
+                  },
+                ),
+                SkillCard(
+                  text: 'انتظار الدور',
+                  image: 'assets/images/wait/situation_1/1.jpg',
+                  onTap: () {
+                    Get.to(() => const Wait());
                   },
                 ),
               ],

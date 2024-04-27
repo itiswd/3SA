@@ -85,6 +85,12 @@ class InfoController extends GetxController {
       ],
       content: Column(
         children: [
+          rate == 3
+              ? Image.asset(
+                  'assets/images/very-good.gif',
+                  width: 160,
+                )
+              : const SizedBox(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.end,

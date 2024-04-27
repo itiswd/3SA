@@ -89,6 +89,14 @@ flutter:
     # cooperation train
     - assets/training/cooperation/situation_1/
     - assets/training/cooperation/situation_2/
+    # wait test
+    - assets/images/wait/situation_1/
+    - assets/images/wait/situation_2/
+    - assets/images/wait/situation_3/
+    - assets/images/wait/situation_4/
+    - assets/images/wait/situation_5/
+    # wait train
+    - assets/training/wait/situation_1/
     # sounds
     - assets/sounds/
     
