@@ -10,7 +10,7 @@ class WaitTrain extends StatelessWidget {
   Widget build(BuildContext context) {
     InfoController controller = Get.put(InfoController());
     return TrainScaffold(
-      itemCount: 1,
+      itemCount: 2,
       text: 'wait',
       title: 'انتظار الدور',
       pageController: controller.pageController,

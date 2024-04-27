@@ -561,5 +561,14 @@ Map trainImage = {
       ],
       'rate': [0, 3, 1, 2],
     },
+    'sit_2': {
+      'image': [
+        'assets/training/wait/situation_2/2.jpg',
+        'assets/training/wait/situation_2/3.jpg',
+        'assets/training/wait/situation_2/1.jpg',
+        'assets/training/wait/situation_2/4.jpg',
+      ],
+      'rate': [2, 1, 3, 0],
+    },
   },
 };

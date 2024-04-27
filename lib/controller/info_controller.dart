@@ -1,4 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
+import 'package:lottie/lottie.dart';
 import 'package:sssa/data/colors.dart';
 import 'package:sssa/main.dart';
 import 'package:flutter/material.dart';
@@ -86,9 +87,10 @@ class InfoController extends GetxController {
       content: Column(
         children: [
           rate == 3
-              ? Image.asset(
-                  'assets/images/very-good.gif',
-                  width: 160,
+              ? Lottie.asset(
+                  'assets/images/excellent.json',
+                  width: 200,
+                  height: 200,
                 )
               : const SizedBox(),
           Row(
@@ -99,17 +101,17 @@ class InfoController extends GetxController {
               Icon(
                 Icons.star,
                 color: rate <= 0 ? Colors.black12 : Colors.amber,
-                size: 40,
-              ),
-              Icon(
-                Icons.star,
-                color: rate <= 1 ? Colors.black12 : Colors.amber,
                 size: 48,
               ),
               Icon(
                 Icons.star,
-                color: rate <= 2 ? Colors.black12 : Colors.amber,
+                color: rate <= 1 ? Colors.black12 : Colors.amber,
                 size: 56,
+              ),
+              Icon(
+                Icons.star,
+                color: rate <= 2 ? Colors.black12 : Colors.amber,
+                size: 48,
               ),
             ],
           )
