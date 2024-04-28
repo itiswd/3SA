@@ -50,12 +50,13 @@ class LevelScaffold extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
                   SizedBox(
-                    height: (Get.height + Get.statusBarHeight + 80) / 3,
+                    height: (Get.height + Get.statusBarHeight + 80) / 2,
                     child: ListView(
                       physics: const NeverScrollableScrollPhysics(),
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 16, left: 16),
+                          padding: const EdgeInsets.only(
+                              top: 16, left: 16, bottom: 64),
                           child: Text(
                             '${index + 1}.',
                             textDirection: TextDirection.ltr,
@@ -89,20 +90,20 @@ class LevelScaffold extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: (Get.height + Get.statusBarHeight + 80) / 1.5,
+                    height: (Get.height + Get.statusBarHeight + 80) / 3,
                     width: Get.width,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 8,
                       ),
                       child: GridView.builder(
-                        itemCount: 4,
+                        itemCount: 3,
                         physics: const NeverScrollableScrollPhysics(),
                         scrollDirection: Axis.vertical,
                         padding: const EdgeInsets.all(0.0),
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
+                          crossAxisCount: 3,
                           crossAxisSpacing: 8.0,
                           mainAxisSpacing: 8.0,
                         ),

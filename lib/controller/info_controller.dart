@@ -105,7 +105,7 @@ class InfoController extends GetxController {
               ),
               Icon(
                 Icons.star,
-                color: rate <= 1 ? Colors.black12 : Colors.amber,
+                color: rate <= 2 ? Colors.black12 : Colors.amber,
                 size: 56,
               ),
               Icon(
@@ -120,8 +120,6 @@ class InfoController extends GetxController {
     );
     if (rate == 3) {
       palyResult.play(AssetSource("sounds/correct3.mp3"));
-    } else if (rate == 2) {
-      palyResult.play(AssetSource("sounds/correct2.mp3"));
     } else if (rate == 1) {
       palyResult.play(AssetSource("sounds/correct1.mp3"));
     } else {
