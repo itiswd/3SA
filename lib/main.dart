@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: '3SA',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: itemColor),
+        colorScheme: ColorScheme.fromSeed(seedColor: appbarColor),
         useMaterial3: true,
         fontFamily: 'HONOR',
       ),

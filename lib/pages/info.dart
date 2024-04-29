@@ -39,7 +39,7 @@ class Info extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Card(
-                          color: itemColor,
+                          color: appbarColor,
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 8,
@@ -55,7 +55,7 @@ class Info extends StatelessWidget {
                           ),
                         ),
                         Card(
-                          color: itemColor,
+                          color: appbarColor,
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 8,

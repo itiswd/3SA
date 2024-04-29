@@ -109,7 +109,7 @@ class LogIn extends StatelessWidget {
               MainButton(
                 width: Get.width - 128,
                 height: 64,
-                color: itemColor,
+                color: appbarColor,
                 text: 'تسجيل دخول',
                 onPressed: () {
                   controller.logIn();

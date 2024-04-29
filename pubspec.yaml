@@ -76,11 +76,14 @@ flutter:
     - assets/images/share/situation_5/
     # share train
     - assets/training/share/situation_1/
-    # emphathy test
-    - assets/images/emphathy/situation_1/
-    - assets/images/emphathy/situation_2/
-    - assets/images/emphathy/situation_3/
-    - assets/images/emphathy/situation_4/
+    # empathy test
+    - assets/images/empathy/situation_1/
+    - assets/images/empathy/situation_2/
+    - assets/images/empathy/situation_3/
+    - assets/images/empathy/situation_4/
+    # emphathy train
+    - assets/training/empathy/situation_1/
+    - assets/training/empathy/situation_2/
     # cooperation test
     - assets/images/cooperation/situation_1/
     - assets/images/cooperation/situation_2/

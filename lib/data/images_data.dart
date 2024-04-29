@@ -475,6 +475,24 @@ Map trainImage = {
       'rate': [1, 3, 0],
     },
   },
+  'empathy': {
+    'sit_1': {
+      'image': [
+        'assets/training/empathy/situation_1/4.jpg',
+        'assets/training/empathy/situation_1/3.jpg',
+        'assets/training/empathy/situation_1/1.jpg',
+      ],
+      'rate': [0, 1, 3],
+    },
+    'sit_2': {
+      'image': [
+        'assets/training/empathy/situation_2/1.jpg',
+        'assets/training/empathy/situation_2/4.jpg',
+        'assets/training/empathy/situation_2/3.jpg',
+      ],
+      'rate': [3, 0, 1],
+    },
+  },
   'cooperation': {
     'sit_1': {
       'image': [

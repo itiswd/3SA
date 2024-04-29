@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
           },
           icon: Icon(
             Icons.logout_outlined,
-            color: itemColor,
+            color: appbarColor,
             size: 32,
           ),
         ),
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
             },
             icon: Icon(
               Icons.person_outline,
-              color: itemColor,
+              color: appbarColor,
               size: 32,
             ),
           ),
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
           MainButton(
             width: Get.width - 128,
             height: 80,
-            color: itemColor,
+            color: appbarColor,
             text: 'التدريب على المهارات',
             onPressed: () {
               Get.to(() => const SkillsTrain());
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
           MainButton(
             width: Get.width - 128,
             height: 80,
-            color: itemColor,
+            color: appbarColor,
             text: 'مقياس المهارات',
             onPressed: () {
               Get.to(() => const SkillsTest());

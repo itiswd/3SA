@@ -50,13 +50,12 @@ class LevelScaffold extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
                   SizedBox(
-                    height: (Get.height + Get.statusBarHeight + 80) / 2,
+                    height: (Get.height + Get.statusBarHeight + 80) / 3,
                     child: ListView(
                       physics: const NeverScrollableScrollPhysics(),
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(
-                              top: 16, left: 16, bottom: 64),
+                          padding: const EdgeInsets.only(top: 16, left: 16),
                           child: Text(
                             '${index + 1}.',
                             textDirection: TextDirection.ltr,
@@ -90,73 +89,185 @@ class LevelScaffold extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: (Get.height + Get.statusBarHeight + 80) / 3,
+                    height: (Get.height + Get.statusBarHeight + 80) / 1.5,
                     width: Get.width,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 8,
                       ),
-                      child: GridView.builder(
-                        itemCount: 3,
-                        physics: const NeverScrollableScrollPhysics(),
-                        scrollDirection: Axis.vertical,
-                        padding: const EdgeInsets.all(0.0),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                          crossAxisSpacing: 8.0,
-                          mainAxisSpacing: 8.0,
-                        ),
-                        itemBuilder: (context, gridIndex) {
-                          return GetBuilder<InfoController>(
-                            builder: (controller) {
-                              return GestureDetector(
-                                onTap: () async {
-                                  if (controller.pageController.page ==
-                                      itemCount - 1) {
-                                    await controller.addPoints(
-                                      imgeData[text]['sit_${index + 1}']['rate']
-                                          [gridIndex],
-                                    );
-                                    await controller.done(
-                                      text,
-                                      title,
-                                    );
-                                  } else {
-                                    await controller.addPoints(
-                                      imgeData[text]['sit_${index + 1}']['rate']
-                                          [gridIndex],
-                                    );
-                                    controller.pageController.nextPage(
-                                      duration:
-                                          const Duration(milliseconds: 400),
-                                      curve: Curves.ease,
-                                    );
-                                  }
-                                },
-                                child: Center(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.circular(25),
-                                    ),
-                                    padding: const EdgeInsets.all(1),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(24),
-                                      child: SizedBox(
-                                        child: Image.asset(
-                                          imgeData[text]['sit_${index + 1}']
-                                              ['image'][gridIndex],
-                                          fit: BoxFit.fill,
+                      child: Center(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Row(
+                              children: [
+                                GetBuilder<InfoController>(
+                                  builder: (controller) {
+                                    return GestureDetector(
+                                      onTap: () async {
+                                        if (controller.pageController.page ==
+                                            itemCount - 1) {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][0],
+                                          );
+                                          await controller.done(
+                                            text,
+                                            title,
+                                          );
+                                        } else {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][0],
+                                          );
+                                          controller.pageController.nextPage(
+                                            duration: const Duration(
+                                                milliseconds: 400),
+                                            curve: Curves.ease,
+                                          );
+                                        }
+                                      },
+                                      child: Center(
+                                        child: Container(
+                                          width: Get.width / 2 - 12,
+                                          height: Get.width / 2 - 12,
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius:
+                                                BorderRadius.circular(25),
+                                          ),
+                                          padding: const EdgeInsets.all(1),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(24),
+                                            child: SizedBox(
+                                              child: Image.asset(
+                                                imgeData[text]
+                                                        ['sit_${index + 1}']
+                                                    ['image'][0],
+                                                fit: BoxFit.fill,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ),
+                                    );
+                                  },
                                 ),
-                              );
-                            },
-                          );
-                        },
+                                const SizedBox(width: 8),
+                                GetBuilder<InfoController>(
+                                  builder: (controller) {
+                                    return GestureDetector(
+                                      onTap: () async {
+                                        if (controller.pageController.page ==
+                                            itemCount - 1) {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][1],
+                                          );
+                                          await controller.done(
+                                            text,
+                                            title,
+                                          );
+                                        } else {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][1],
+                                          );
+                                          controller.pageController.nextPage(
+                                            duration: const Duration(
+                                                milliseconds: 400),
+                                            curve: Curves.ease,
+                                          );
+                                        }
+                                      },
+                                      child: Center(
+                                        child: Container(
+                                          width: Get.width / 2 - 12,
+                                          height: Get.width / 2 - 12,
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius:
+                                                BorderRadius.circular(25),
+                                          ),
+                                          padding: const EdgeInsets.all(1),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(24),
+                                            child: SizedBox(
+                                              child: Image.asset(
+                                                imgeData[text]
+                                                        ['sit_${index + 1}']
+                                                    ['image'][1],
+                                                fit: BoxFit.fill,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                GetBuilder<InfoController>(
+                                  builder: (controller) {
+                                    return GestureDetector(
+                                      onTap: () async {
+                                        if (controller.pageController.page ==
+                                            itemCount - 1) {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][2],
+                                          );
+                                          await controller.done(
+                                            text,
+                                            title,
+                                          );
+                                        } else {
+                                          await controller.addPoints(
+                                            imgeData[text]['sit_${index + 1}']
+                                                ['rate'][2],
+                                          );
+                                          controller.pageController.nextPage(
+                                            duration: const Duration(
+                                                milliseconds: 400),
+                                            curve: Curves.ease,
+                                          );
+                                        }
+                                      },
+                                      child: Container(
+                                        width: Get.width / 2 - 12,
+                                        height: Get.width / 2 - 12,
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius:
+                                              BorderRadius.circular(25),
+                                        ),
+                                        padding: const EdgeInsets.all(1),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(24),
+                                          child: SizedBox(
+                                            child: Image.asset(
+                                              imgeData[text]['sit_${index + 1}']
+                                                  ['image'][2],
+                                              fit: BoxFit.fill,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   )

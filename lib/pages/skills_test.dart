@@ -18,7 +18,7 @@ class SkillsTest extends StatelessWidget {
       backgroundColor: backColor,
       appBar: AppBar(
         toolbarHeight: 72,
-        backgroundColor: itemColor,
+        backgroundColor: appbarColor,
         centerTitle: true,
         title: const Text(
           'مقياس المهارات',
@@ -48,9 +48,9 @@ class SkillsTest extends StatelessWidget {
                 ),
                 SkillCard(
                   text: 'التعاطف',
-                  image: 'assets/images/emphathy/situation_1/1.jpg',
+                  image: 'assets/images/empathy/situation_1/1.jpg',
                   onTap: () {
-                    Get.to(() => const EmphathySkill());
+                    Get.to(() => const EmpathySkill());
                   },
                 ),
                 SkillCard(

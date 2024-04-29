@@ -59,7 +59,7 @@ class InfoController extends GetxController {
               ),
             ),
             Card(
-              color: itemColor,
+              color: appbarColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(40),
               ),

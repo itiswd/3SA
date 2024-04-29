@@ -25,7 +25,7 @@ class RateElement extends StatelessWidget {
         width: Get.width - 32,
         height: 56,
         decoration: BoxDecoration(
-          color: appbarColor.withOpacity(0.7),
+          color: appbarColor.withOpacity(0.4),
           borderRadius: BorderRadius.circular(40),
         ),
         child: Center(
@@ -35,7 +35,7 @@ class RateElement extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(right: 8),
                 child: Card(
-                  color: itemColor,
+                  color: appbarColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24),
                   ),
@@ -57,7 +57,7 @@ class RateElement extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 8),
                 child: Card(
-                  color: itemColor,
+                  color: appbarColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24),
                   ),
