@@ -529,4 +529,22 @@ Map trainImage = {
       'rate': [1, 3, 0],
     },
   },
+  'friends': {
+    'sit_1': {
+      'image': [
+        'assets/training/friends/situation_1/3.jpg',
+        'assets/training/friends/situation_1/4.jpg',
+        'assets/training/friends/situation_1/1.jpg',
+      ],
+      'rate': [1, 0, 3],
+    },
+    'sit_2': {
+      'image': [
+        'assets/training/friends/situation_2/4.jpg',
+        'assets/training/friends/situation_2/1.jpg',
+        'assets/training/friends/situation_2/3.jpg',
+      ],
+      'rate': [0, 3, 1],
+    },
+  },
 };

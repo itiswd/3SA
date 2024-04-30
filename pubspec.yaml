@@ -102,6 +102,9 @@ flutter:
     # wait train
     - assets/training/wait/situation_1/
     - assets/training/wait/situation_2/
+    # friends train
+    - assets/training/friends/situation_1/
+    - assets/training/friends/situation_2/
     # sounds
     - assets/sounds/
     

@@ -2,6 +2,7 @@ import 'package:sssa/controller/info_controller.dart';
 import 'package:sssa/data/colors.dart';
 import 'package:sssa/pages/skills_training/cooperation.dart';
 import 'package:sssa/pages/skills_training/empathy.dart';
+import 'package:sssa/pages/skills_training/friends.dart';
 import 'package:sssa/pages/skills_training/share.dart';
 import 'package:sssa/pages/skills_training/wait.dart';
 import 'package:sssa/widgets/skill_card.dart';
@@ -65,6 +66,13 @@ class SkillsTrain extends StatelessWidget {
                   image: 'assets/training/wait/situation_1/1.jpg',
                   onTap: () {
                     Get.to(() => const WaitTrain());
+                  },
+                ),
+                SkillCard(
+                  text: 'تكوين الصداقات',
+                  image: 'assets/training/friends/situation_1/1.jpg',
+                  onTap: () {
+                    Get.to(() => const FriendsTrain());
                   },
                 ),
               ],
