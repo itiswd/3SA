@@ -42,6 +42,13 @@ dependencies:
   image_picker: ^1.1.0
   audioplayers: ^6.0.0
   lottie: ^3.1.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo.jpg
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -52,6 +59,12 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/logo.jpg"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -66,6 +79,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/images/
     - assets/fonts/
     # share test
@@ -102,6 +116,12 @@ flutter:
     # wait train
     - assets/training/wait/situation_1/
     - assets/training/wait/situation_2/
+    # friends test
+    - assets/images/friends/situation_1/
+    - assets/images/friends/situation_2/
+    - assets/images/friends/situation_3/
+    - assets/images/friends/situation_4/
+    - assets/images/friends/situation_5/
     # friends train
     - assets/training/friends/situation_1/
     - assets/training/friends/situation_2/

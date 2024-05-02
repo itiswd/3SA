@@ -110,6 +110,11 @@ class Info extends StatelessWidget {
                           text1: 'انتظار الدور',
                           text2: '${prefs.getInt('wait')} من 15',
                         ),
+                        RateElement(
+                          visible: 'friends',
+                          text1: 'تكوين الصداقات',
+                          text2: '${prefs.getInt('friends')} من 15',
+                        ),
                       ],
                     ),
                   )

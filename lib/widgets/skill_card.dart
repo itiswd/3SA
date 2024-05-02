@@ -20,21 +20,22 @@ class SkillCard extends StatelessWidget {
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.circular(48),
         ),
+        margin: const EdgeInsets.all(4.0),
         clipBehavior: Clip.antiAlias,
         child: SizedBox(
-          width: Get.width / 3,
-          height: Get.width / 3,
+          width: Get.width / 3.2,
+          height: Get.width / 3.2,
           child: Stack(
             children: [
               Image.asset(
                 image,
-                width: Get.width / 3,
-                height: Get.width / 3,
+                width: Get.width / 3.2,
+                height: Get.width / 3.2,
                 fit: BoxFit.fill,
               ),
               Container(
-                width: Get.width / 3,
-                height: Get.width / 3,
+                width: Get.width / 3.2,
+                height: Get.width / 3.2,
                 color: Colors.black.withOpacity(0.3),
               ),
               Center(

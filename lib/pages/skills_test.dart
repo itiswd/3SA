@@ -2,6 +2,7 @@ import 'package:sssa/controller/info_controller.dart';
 import 'package:sssa/data/colors.dart';
 import 'package:sssa/pages/skills_test/cooperation.dart';
 import 'package:sssa/pages/skills_test/empathy.dart';
+import 'package:sssa/pages/skills_test/friends.dart';
 import 'package:sssa/pages/skills_test/share.dart';
 import 'package:sssa/pages/skills_test/wait.dart';
 import 'package:sssa/widgets/skill_card.dart';
@@ -34,38 +35,52 @@ class SkillsTest extends StatelessWidget {
       body: Center(
         child: GetBuilder<InfoController>(
           builder: (controller) {
-            return GridView(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-              ),
+            return Column(
               children: [
-                SkillCard(
-                  text: 'المشاركة',
-                  image: 'assets/images/share/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const ShareSkill());
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SkillCard(
+                      text: 'المشاركة',
+                      image: 'assets/images/share/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const ShareSkill());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'التعاطف',
+                      image: 'assets/images/empathy/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const EmpathySkill());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'التعاون',
+                      image: 'assets/images/cooperation/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const Cooperation());
+                      },
+                    ),
+                  ],
                 ),
-                SkillCard(
-                  text: 'التعاطف',
-                  image: 'assets/images/empathy/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const EmpathySkill());
-                  },
-                ),
-                SkillCard(
-                  text: 'التعاون',
-                  image: 'assets/images/cooperation/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const Cooperation());
-                  },
-                ),
-                SkillCard(
-                  text: 'انتظار الدور',
-                  image: 'assets/images/wait/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const Wait());
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SkillCard(
+                      text: 'انتظار الدور',
+                      image: 'assets/images/wait/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const Wait());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'تكوين الصداقات',
+                      image: 'assets/images/friends/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const Friends());
+                      },
+                    ),
+                  ],
                 ),
               ],
             );

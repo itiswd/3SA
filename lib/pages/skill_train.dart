@@ -35,45 +35,52 @@ class SkillsTrain extends StatelessWidget {
       body: Center(
         child: GetBuilder<InfoController>(
           builder: (controller) {
-            return GridView(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-              ),
+            return Column(
               children: [
-                SkillCard(
-                  text: 'المشاركة',
-                  image: 'assets/training/share/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const ShareTrain());
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SkillCard(
+                      text: 'المشاركة',
+                      image: 'assets/training/share/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const ShareTrain());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'التعاطف',
+                      image: 'assets/images/empathy/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const EmpathyTrain());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'التعاون',
+                      image: 'assets/training/cooperation/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const CooperationTrain());
+                      },
+                    ),
+                  ],
                 ),
-                SkillCard(
-                  text: 'التعاطف',
-                  image: 'assets/images/empathy/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const EmpathyTrain());
-                  },
-                ),
-                SkillCard(
-                  text: 'التعاون',
-                  image: 'assets/training/cooperation/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const CooperationTrain());
-                  },
-                ),
-                SkillCard(
-                  text: 'انتظار الدور',
-                  image: 'assets/training/wait/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const WaitTrain());
-                  },
-                ),
-                SkillCard(
-                  text: 'تكوين الصداقات',
-                  image: 'assets/training/friends/situation_1/1.jpg',
-                  onTap: () {
-                    Get.to(() => const FriendsTrain());
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SkillCard(
+                      text: 'انتظار الدور',
+                      image: 'assets/training/wait/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const WaitTrain());
+                      },
+                    ),
+                    SkillCard(
+                      text: 'تكوين الصداقات',
+                      image: 'assets/training/friends/situation_1/1.jpg',
+                      onTap: () {
+                        Get.to(() => const FriendsTrain());
+                      },
+                    ),
+                  ],
                 ),
               ],
             );
