@@ -70,7 +70,7 @@ class TrainScaffold extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             IconButton(
-                              padding: const EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(8),
                               onPressed: () {
                                 pageController!.previousPage(
                                     duration: const Duration(milliseconds: 400),
@@ -102,7 +102,7 @@ class TrainScaffold extends StatelessWidget {
                               ),
                             ),
                             IconButton(
-                              padding: const EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(8),
                               onPressed: () {
                                 pageController!.nextPage(
                                     duration: const Duration(milliseconds: 400),

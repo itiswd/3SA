@@ -41,36 +41,36 @@ Map imgeData = {
       'rate': [0, 1, 3],
     },
   },
-  'emphathy': {
+  'empathy': {
     'sit_1': {
       'image': [
-        'assets/images/emphathy/situation_1/3.jpg',
-        'assets/images/emphathy/situation_1/1.jpg',
-        'assets/images/emphathy/situation_1/4.jpg',
+        'assets/images/empathy/situation_1/3.jpg',
+        'assets/images/empathy/situation_1/1.jpg',
+        'assets/images/empathy/situation_1/4.jpg',
       ],
       'rate': [1, 3, 0],
     },
     'sit_2': {
       'image': [
-        'assets/images/emphathy/situation_2/4.jpg',
-        'assets/images/emphathy/situation_2/1.jpg',
-        'assets/images/emphathy/situation_2/3.jpg',
+        'assets/images/empathy/situation_2/4.jpg',
+        'assets/images/empathy/situation_2/1.jpg',
+        'assets/images/empathy/situation_2/3.jpg',
       ],
       'rate': [0, 3, 1],
     },
     'sit_3': {
       'image': [
-        'assets/images/emphathy/situation_3/1.jpg',
-        'assets/images/emphathy/situation_3/3.jpg',
-        'assets/images/emphathy/situation_3/4.jpg',
+        'assets/images/empathy/situation_3/1.jpg',
+        'assets/images/empathy/situation_3/3.jpg',
+        'assets/images/empathy/situation_3/4.jpg',
       ],
       'rate': [3, 1, 0],
     },
     'sit_4': {
       'image': [
-        'assets/images/emphathy/situation_4/3.jpg',
-        'assets/images/emphathy/situation_4/1.jpg',
-        'assets/images/emphathy/situation_4/4.jpg',
+        'assets/images/empathy/situation_4/3.jpg',
+        'assets/images/empathy/situation_4/1.jpg',
+        'assets/images/empathy/situation_4/4.jpg',
       ],
       'rate': [1, 3, 0],
     },

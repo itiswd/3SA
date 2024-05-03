@@ -5,6 +5,7 @@ import 'package:sssa/main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class InfoController extends GetxController {
   int tempNum = 0;
@@ -119,11 +120,24 @@ class InfoController extends GetxController {
       ),
     );
     if (rate == 3) {
+      palyResult.stop();
       palyResult.play(AssetSource("sounds/correct3.mp3"));
     } else if (rate == 1) {
+      palyResult.stop();
       palyResult.play(AssetSource("sounds/correct1.mp3"));
     } else {
+      palyResult.stop();
       palyResult.play(AssetSource("sounds/wrong.mp3"));
+    }
+  }
+
+//Url Launcher
+  Future<void> launchWhatsUrl(dynamic linkk, dynamic x) async {
+    if (!await launchUrl(
+      Uri.parse(linkk),
+      mode: x,
+    )) {
+      throw 'Could not launch ${Uri.parse(linkk)}';
     }
   }
 }

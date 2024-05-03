@@ -38,7 +38,7 @@ class SkillsTest extends StatelessWidget {
             return Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SkillCard(
                       text: 'المشاركة',
@@ -54,6 +54,11 @@ class SkillsTest extends StatelessWidget {
                         Get.to(() => const EmpathySkill());
                       },
                     ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
                     SkillCard(
                       text: 'التعاون',
                       image: 'assets/images/cooperation/situation_1/1.jpg',
@@ -61,11 +66,6 @@ class SkillsTest extends StatelessWidget {
                         Get.to(() => const Cooperation());
                       },
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
                     SkillCard(
                       text: 'انتظار الدور',
                       image: 'assets/images/wait/situation_1/1.jpg',
@@ -73,6 +73,11 @@ class SkillsTest extends StatelessWidget {
                         Get.to(() => const Wait());
                       },
                     ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
                     SkillCard(
                       text: 'تكوين الصداقات',
                       image: 'assets/images/friends/situation_1/1.jpg',

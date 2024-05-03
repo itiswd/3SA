@@ -17,25 +17,25 @@ class SkillCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Card(
+        margin: const EdgeInsets.only(top: 8.0),
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.circular(48),
         ),
-        margin: const EdgeInsets.all(4.0),
         clipBehavior: Clip.antiAlias,
         child: SizedBox(
-          width: Get.width / 3.2,
-          height: Get.width / 3.2,
+          width: (Get.width / 2) - 16,
+          height: (Get.width / 2) - 16,
           child: Stack(
             children: [
               Image.asset(
                 image,
-                width: Get.width / 3.2,
-                height: Get.width / 3.2,
+                width: (Get.width / 2) - 16,
+                height: (Get.width / 2) - 16,
                 fit: BoxFit.fill,
               ),
               Container(
-                width: Get.width / 3.2,
-                height: Get.width / 3.2,
+                width: (Get.width / 2) - 16,
+                height: (Get.width / 2) - 16,
                 color: Colors.black.withOpacity(0.3),
               ),
               Center(
@@ -46,7 +46,7 @@ class SkillCard extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

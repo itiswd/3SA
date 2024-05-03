@@ -91,14 +91,14 @@ class Info extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         RateElement(
-                          visible: 'visshare',
+                          visible: 'share',
                           text1: 'المشاركة',
                           text2: '${prefs.getInt('share')} من 15',
                         ),
                         RateElement(
-                          visible: 'visemphathy',
+                          visible: 'empathy',
                           text1: 'التعاطف',
-                          text2: '${prefs.getInt('emphathy')} من 12',
+                          text2: '${prefs.getInt('empathy')} من 12',
                         ),
                         RateElement(
                           visible: 'cooperation',
